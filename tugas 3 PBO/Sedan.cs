@@ -8,11 +8,11 @@ namespace tugas_3_PBO
 {
     internal class Sedan : Otomobil
     {
-        public string tahunKendaraan, warnaKapMesin;
-        public int jumlahKursi, kecepatanMaksimum;
+        public string warnaKapMesin;
+        public int tahunKendaraan, jumlahKursi, kecepatanMaksimum;
         public double luasBagasi;
         public Sedan(string jenisKendaraan, string merkKendaraan, string typeKendaraan, string warna, 
-            string tahunKendaraan,  double luasBagasi, string warnaKapMesin, int jumlahKursi, int kecepatanMaksimum) :
+            int tahunKendaraan,  double luasBagasi, string warnaKapMesin, int jumlahKursi, int kecepatanMaksimum) :
             base (jenisKendaraan, merkKendaraan,typeKendaraan, warna)
         {
             this.jenisKendaraan = jenisKendaraan;
@@ -32,10 +32,10 @@ namespace tugas_3_PBO
             Console.WriteLine($"Tipe               : {typeKendaraan}");
             Console.WriteLine($"Warna              : {warna}");
             Console.WriteLine($"Tahun              : {tahunKendaraan}");
-            Console.WriteLine($"Luas Bagasi        : {luasBagasi}");
+            Console.WriteLine($"Luas Bagasi        : {luasBagasi} m3");
             Console.WriteLine($"Warna Kap Mesin    : {warnaKapMesin}");
-            Console.WriteLine($"Jumlah Kursi       : {jumlahKursi}");
-            Console.WriteLine($"Kecepatan Maksimum : {kecepatanMaksimum}");
+            Console.WriteLine($"Jumlah Kursi       : {jumlahKursi} Kursi");
+            Console.WriteLine($"Kecepatan Maksimum : {kecepatanMaksimum} Km/Jam");
             Console.WriteLine("");
         }
 
